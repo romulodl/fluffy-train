@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Hello Rent Service</title>
+  </head>
+  <body data-controller="wallet">
+    <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-600">NFT renting test services</h1>
+
+    <div>
+        <button class="btn btn-primary btn-sm" data-wallet-hidden-class="hidden" data-wallet-target="connectButton" data-action="click->wallet#connectWallet">Connect Wallet</button>
+        <button class="btn btn-primary btn-sm hidden" data-wallet-hidden-class="hidden" data-wallet-target="disconnectButton" data-action="click->wallet#disconnectWallet">Disconnect Wallet</button>
+    </div>
+
+    <div class="hidden" data-wallet-hidden-class="hidden" data-wallet-target="rentDiv" data-rent-target="rentDiv" data-controller="rent">
+        <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-600">Your NFT</h2>
+        <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-600">Your Rented NFT</h2>
+        <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-600">NFTs for rent</h2>
+        <h2 class="font-medium leading-tight text-4xl mt-0 mb-2 text-600">Put your NFT to rent</h2>
+    </div>
+
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>
